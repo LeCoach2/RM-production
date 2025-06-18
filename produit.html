@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Produits - Mon Entreprise</title>
+  <link rel="stylesheet" href="produit.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="acceuil.html">Accueil</a>
+    <a href="histoire.html">a propos de nous</a>
+    <a href="produit.html">Produits</a>
+    <a href="livraison.html">Livraison</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Nos Produits</h1>
+    <div class="filtres">
+        <select id="filtre-categorie">
+          <option value="tous">Toutes les catégories</option>
+          <option value="Boissons">Boissons</option>
+          <option value="Alimentaire">Alimentaire</option>
+        </select>
+      
+        <select id="filtre-nouveaute">
+          <option value="tous">Tous les produits</option>
+          <option value="nouveau">Nouveautés</option>
+          <option value="ancien">Anciens</option>
+        </select>
+      </div>
+      
+    
+
+
+    <div class="produits-container">
+      <!-- Produits (filtres ajoutés plus tard) -->
+      <div class="produit">
+        <img src="https://via.placeholder.com/150" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Description du produit 1</p>
+      </div>
+      <div class="produit">
+        <img src="https://via.placeholder.com/150" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Description du produit 2</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; RM production</p>
+  </footer>
+</body>
+</html>

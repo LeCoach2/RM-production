@@ -1,0 +1,234 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #111827;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .navbar a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #fbbf24;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 0.5rem;
+  }
+  
+  section {
+    margin-bottom: 4rem;
+  }
+  
+  /* Filtres produits */
+  .filtres {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filtres select {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  .produits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .produit {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .produit:hover {
+    transform: translateY(-5px);
+  }
+  
+  .produit img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .produit .nouveau {
+    display: inline-block;
+    background-color: #10b981;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form input,
+  form textarea {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #4338ca;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #111827;
+    color: #e5e7eb;
+    margin-top: 4rem;
+  }
+  
+  .accueil {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.8;
+  }
+  
+  .accueil h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .accueil .accent {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .accueil .intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 6px solid #27ae60;
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    color: #27ae60;
+    margin-bottom: 1rem;
+  }
+  
+  .liste-produits {
+    list-style: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .liste-produits li::before {
+    content: "🟢 ";
+  }
+  
+  .avantages ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .avantages li {
+    margin-bottom: 0.5rem;
+  }
+  
+
+  /* Animation au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bouton retour en haut */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Lien actif */
+.navbar a.active-link {
+  color: rgb(251, 36, 36);
+  text-decoration: underline;
+}
